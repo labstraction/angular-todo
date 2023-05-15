@@ -20,5 +20,9 @@ export class AppComponent {
       title: 'compra il pane',
       priority: 1
     }
-  ]
+  ];
+
+  addTodo(todo: Todo){
+    this.todos.push(todo);
+  }
 }

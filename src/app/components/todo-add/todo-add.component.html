@@ -1,1 +1,13 @@
-<p>todo-add works!</p>
+<div>
+  <label for="input-title">Inserisci Titolo</label>
+  <input id="input-title" type="text" [(ngModel)]="newTodo.title">
+</div>
+<div>
+  <label for="input-description">Inserisci Descrizione</label>
+  <input id="input-description" type="text" [(ngModel)]="newTodo.description">
+</div>
+<div>
+  <label for="input-priority">Inserisci Priorità</label>
+  <input id="input-priority" type="number" [(ngModel)]="newTodo.priority">
+</div>
+<button (click)="saveTodo()">Salva</button>

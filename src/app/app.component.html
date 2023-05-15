@@ -1,2 +1,3 @@
 <h1>Angular Todo</h1>
 <app-todo-list [todoArray]="todos"></app-todo-list>
+<app-todo-add (todoCreated)="addTodo($event)"></app-todo-add>
